@@ -1,11 +1,10 @@
 # Docker image packaging for Apache Zookeeper
 
-This is the Git repo of the [Docker "Official Image"](https://github.com/docker-library/official-images#what-are-official-images) for [`zookeeper`](https://hub.docker.com/_/zookeeper/). See [the Docker Hub page](https://hub.docker.com/_/zookeeper/) for the full readme on how to use this Docker image and for information regarding contributing and issues.
+&#9888; This version of ___zookeeper-docker___ is forked from <https://github.com/31z4/zookeeper-docker> &#9888;
 
-The [full image description on Docker Hub](https://hub.docker.com/_/zookeeper/) is generated/maintained over in [the docker-library/docs repository](https://github.com/docker-library/docs), specifically in [the `zookeeper` directory](https://github.com/docker-library/docs/tree/master/zookeeper).
+This packaging for Apache Zookeeper is forked from the [Docker "Official Image"](https://github.com/docker-library/official-images#what-are-official-images) for [`zookeeper`](https://hub.docker.com/_/zookeeper/) with the following changes:
 
-## See a change merged here that doesn't show up on Docker Hub yet?
-
-For more information about the full official images change lifecycle, see [the "An image's source changed in Git, now what?" FAQ entry](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
-
-For outstanding `zookeeper` image PRs, check [PRs with the "library/zookeeper" label on the official-images repository](https://github.com/docker-library/official-images/labels/library%2Fzookeeper). For the current "source of truth" for [`zookeeper`](https://hub.docker.com/_/zookeeper/), see [the `library/zookeeper` file in the official-images repository](https://github.com/docker-library/official-images/blob/master/library/zookeeper).
+* build the stable branch only
+* use the Alpine based <https://hub.docker.com/_/eclipse-temurin> image variant as base image
+* upgrades the base image with the latest packages from the stable branch on build
+* must be run as user 1000:1000
