@@ -1,4 +1,4 @@
-FROM eclipse-temurin:17-jre-alpine-3.22
+FROM eclipse-temurin:17-jre-alpine-3.23
 
 ENV ZOO_CONF_DIR=/conf \
     ZOO_DATA_DIR=/data \
