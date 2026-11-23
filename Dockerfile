@@ -1,4 +1,4 @@
-FROM eclipse-temurin:17-jre-alpine-3.23
+FROM eclipse-temurin:17.0.21.1_2-jre-alpine-3.24
 
 ENV ZOO_CONF_DIR=/conf \
     ZOO_DATA_DIR=/data \
@@ -36,8 +36,8 @@ RUN apk --update upgrade && \
 
 ARG PACKET_HASH=3F7A1D16FA4217B1DC75E1C9FFE35B7F15DFA1BA
 
-ARG SHORT_DISTRO_NAME=zookeeper-3.8.6
-ARG DISTRO_NAME=apache-zookeeper-3.8.6-bin
+ARG SHORT_DISTRO_NAME=zookeeper-3.8.8
+ARG DISTRO_NAME=apache-zookeeper-3.8.8-bin
 
 # Download Apache Zookeeper, verify its PGP signature, untar and clean up
 # use inline ddist to reduce complexity
